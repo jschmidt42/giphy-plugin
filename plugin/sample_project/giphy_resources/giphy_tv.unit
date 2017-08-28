@@ -1,0 +1,65 @@
+
+materials = {
+	frame = "giphy_resources/frame"
+	screen = "giphy_resources/screen"
+}
+renderables = {
+	frame_mesh = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	screen_mesh = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}
+data = {
+	giphy_resource = ""
+	giphy_mesh_index = 1
+	giphy_material_slot_name = "color_map"
+}
+
+editor_metadata = {
+	data_ui = {
+		categories = {
+			giphy = {
+				label = "Giphy"
+				order = 80
+			}
+		}
+		controls = {
+			giphy_resource = {
+				category = "giphy"
+				extension = "gif"
+				label = "Giphy"
+				order = 1
+				type = "resource"
+			}
+			giphy_mesh_index = {
+				category = "giphy"
+				label = "Mesh index"
+				order = 2
+				type = "number"
+			}
+			giphy_material_slot_name = {
+				category = "giphy"
+				default = "color_map"
+				label = "Material Slot Name"
+				order = 3
+				type = "string"
+			}
+		}
+	}
+}
