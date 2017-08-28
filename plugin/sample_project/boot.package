@@ -25,3 +25,5 @@ config = [
 material = [
 	"core/performance_hud/*"
 ]
+
+gif = ["gifs/*", "giphy_resources/*"]

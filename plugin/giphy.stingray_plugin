@@ -38,7 +38,7 @@ extensions = {
 
     // Define a project template extension that will show up in the project manager.
     templates = [
-        //{ type = "project-template" path = "sample_project/sample.stingray_project" }
+        { type = "project-template" path = "sample_project/sample.stingray_project" }
     ]
 
     // Map plugin resources

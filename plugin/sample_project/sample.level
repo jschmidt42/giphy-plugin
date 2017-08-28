@@ -484,15 +484,15 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -0.0461930446326733
+				X = -0.0461931228637695
 				Y = 4.61916780471802
 				Z = 1.47348737716675
 			}
 			Rot = {
-				W = -1
+				W = 0.0164744965732098
 				X = 0
 				Y = 0
-				Z = 0
+				Z = 0.999864339828491
 			}
 			Scl = {
 				X = 1
@@ -501,6 +501,120 @@ editor_metadata = {
 			}
 			ScriptData = {
 				giphy_resource = "gifs/68747470733a2f2f6175746f6465736b2e626f782e636f6d2f7368617265642f7374617469632f696b7234377632763564756268386135356474656c356177676b71626d6f7a372e676966[2]"
+			}
+			Type = "giphy_resources/giphy_tv"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b5d581a8-430c-4e87-98c7-7205f7f4edba"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "giphy_tv1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.97116613388062
+				Y = 4.61916780471802
+				Z = 1.47348737716675
+			}
+			Rot = {
+				W = 0.397938013076782
+				X = 0
+				Y = 0
+				Z = 0.917412281036377
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				giphy_resource = "gifs/3oKGzj8ipndOVj1lzG"
+			}
+			Type = "giphy_resources/giphy_tv"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ea3003cd-6349-4087-8d37-efb926ee7b86"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "giphy_tv2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -5.31010150909424
+				Y = 4.61916780471802
+				Z = 1.47348737716675
+			}
+			Rot = {
+				W = -0.190546855330467
+				X = 0
+				Y = 0
+				Z = 0.981678128242493
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				giphy_resource = "gifs/3o7aCSOPnlx1u7ubXa"
+			}
+			Type = "giphy_resources/giphy_tv"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f7a7df57-4f97-4d2c-9419-42ed2a448f4e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "giphy_tv3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.0461931228637695
+				Y = 4.61916780471802
+				Z = 4.25826072692871
+			}
+			Rot = {
+				W = 0.0164744965732098
+				X = 0
+				Y = 0
+				Z = 0.999864280223846
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				giphy_resource = "gifs/xT9IggDCSIWH5jcOdy"
 			}
 			Type = "giphy_resources/giphy_tv"
 		}
@@ -701,8 +815,62 @@ units = [
 		materials = {
 		}
 		name = "giphy_tv"
-		pos = [-0.0461930446326733 4.61916780471802 1.47348737716675]
-		rot = [0 0 0 -1]
+		pos = [-0.0461931228637695 4.61916780471802 1.47348737716675]
+		rot = [0 0 0.999864339828491 0.0164744965732098]
+		scl = [1 1 1]
+		type = "giphy_resources/giphy_tv"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			giphy_resource = "gifs/3oKGzj8ipndOVj1lzG"
+		}
+		id = "b5d581a8-430c-4e87-98c7-7205f7f4edba"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "giphy_tv1"
+		pos = [4.97116613388062 4.61916780471802 1.47348737716675]
+		rot = [0 0 0.917412281036377 0.397938013076782]
+		scl = [1 1 1]
+		type = "giphy_resources/giphy_tv"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			giphy_resource = "gifs/3o7aCSOPnlx1u7ubXa"
+		}
+		id = "ea3003cd-6349-4087-8d37-efb926ee7b86"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "giphy_tv2"
+		pos = [-5.31010150909424 4.61916780471802 1.47348737716675]
+		rot = [0 0 0.981678128242493 -0.190546855330467]
+		scl = [1 1 1]
+		type = "giphy_resources/giphy_tv"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			giphy_resource = "gifs/xT9IggDCSIWH5jcOdy"
+		}
+		id = "f7a7df57-4f97-4d2c-9419-42ed2a448f4e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "giphy_tv3"
+		pos = [-0.0461931228637695 4.61916780471802 4.25826072692871]
+		rot = [0 0 0.999864280223846 0.0164744965732098]
 		scl = [1 1 1]
 		type = "giphy_resources/giphy_tv"
 	}
