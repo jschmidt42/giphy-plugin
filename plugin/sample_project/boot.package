@@ -1,17 +1,9 @@
-// WILL AUTOLOAD ALL CONTENT AND SCRIPTS. PLEASE REMOVE TO CONTROL CONTENT LOADING
-* = ["*"]
 
-config = [
-	"core/performance_hud/performance_hud"
-]
-font = [
-	"core/performance_hud/debug"
+"*" = [
+	"*"
 ]
 lua = [
 	"core/appkit/lua/*"
-]
-material = [
-	"core/performance_hud/*"
 ]
 unit = [
 	"core/editor_slave/units/skydome/skydome"
@@ -19,7 +11,17 @@ unit = [
 	"core/appkit/units/*"
 ]
 shading_environment = [
-    "core/stingray_renderer/environments/midday/midday"
+	"core/stingray_renderer/environments/midday/midday"
 ]
-
-ADD_PACKAGES = []
+font = [
+	"core/performance_hud/debug"
+]
+ADD_PACKAGES = [
+	"gwnav/boot.package"
+]
+config = [
+	"core/performance_hud/performance_hud"
+]
+material = [
+	"core/performance_hud/*"
+]
