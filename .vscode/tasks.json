@@ -28,11 +28,12 @@ ${cwd} the task runner's current working directory on startup
             "command": "node",
             "args": [
                 "./node_modules/typescript/bin/tsc",
-                "-p", "./"
+                "-p", "./editor/typescript/tsconfig.json",
+                "--listEmittedFiles"
             ],
             "isShellCommand": true,
             "options": {
-                "cwd": "${workspaceRoot}/editor/typescript"
+                "cwd": "${workspaceRoot}"
             },
             "problemMatcher": "$tsc"
         },
