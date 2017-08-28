@@ -1,61 +1,114 @@
 
-parent_material = "core/stingray_renderer/shader_import/standard"
+shader = {
+	connections = [
+		{
+			destination = {
+				connector_id = "c5823c75-4ae5-4c71-b070-315fa4d03e8e"
+				instance_id = "b63520fa-6f53-4ffb-a443-c09d53e97fd8"
+			}
+			source = {
+				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
+			}
+		}
+		{
+			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "20461e9a-8cc0-4af3-a588-22191cc9cfcd"
+			}
+			source = {
+				instance_id = "b63520fa-6f53-4ffb-a443-c09d53e97fd8"
+			}
+		}
+		{
+			destination = {
+				connector_id = "aca690cb-6305-4a2f-bf3d-69183a493db3"
+				instance_id = "e7419a4c-ddb1-4780-bee9-1ab9063d997f"
+			}
+			select = [
+				"rgb"
+			]
+			source = {
+				instance_id = "20461e9a-8cc0-4af3-a588-22191cc9cfcd"
+			}
+		}
+	]
+	constants = [
+		{
+			connector_id = "242d1648-a626-445b-9534-bccec094112f"
+			id = "b9ce2243-00e1-4332-ad61-1e8cd837530c"
+			instance_id = "b63520fa-6f53-4ffb-a443-c09d53e97fd8"
+			value = [-1 1]
+		}
+	]
+	groups = [
+	]
+	nodes = [
+		{
+			content_size = [160 0]
+			export = {
+			}
+			id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
+			options = [
+			]
+			position = [0 380]
+			samplers = {
+			}
+			type = "core/shader_nodes/texture_coordinate0"
+		}
+		{
+			content_size = [160 0]
+			export = {
+			}
+			id = "20461e9a-8cc0-4af3-a588-22191cc9cfcd"
+			options = [
+				"5dd59b3d-1762-4a14-9930-7500230ef3db"
+				"1e067464-12d8-4826-9b72-cfd5765003e3"
+				"fb3f709b-a54a-4e93-ac9f-e9fc76fb8bcd"
+			]
+			position = [560 320]
+			samplers = {
+				texture_map = {
+					display_name = "Color Map"
+					slot_name = "color_map"
+					ui = {
+						order = 1
+					}
+				}
+			}
+			title = "Color Map"
+			type = "core/shader_nodes/sample_texture"
+		}
+		{
+			content_size = [160 0]
+			export = {
+			}
+			id = "e7419a4c-ddb1-4780-bee9-1ab9063d997f"
+			options = [
+				"c8d8b754-c567-4c7b-9cbd-8acab22beff5"
+			]
+			position = [840 360]
+			samplers = {
+			}
+			title = "color_map"
+			type = "core/stingray_renderer/output_nodes/unlit_base"
+		}
+		{
+			content_size = [160 0]
+			export = {
+			}
+			id = "b63520fa-6f53-4ffb-a443-c09d53e97fd8"
+			options = [
+			]
+			position = [280 320]
+			samplers = {
+			}
+			type = "core/shader_nodes/mul"
+		}
+	]
+	version = 3
+}
 textures = {
-	brdf_lut = "core/stingray_renderer/lookup_tables/ibl_brdf_lut"
-	global_diffuse_cube = "core/stingray_renderer/environments/midday/diffuse_cube"
-	global_specular_cube = "core/stingray_renderer/environments/midday/specular_cube"
+	color_map = null
 }
 variables = {
-	base_color = {
-		type = "vector3"
-		value = [1 1 1]
-	}
-	emissive = {
-		type = "vector3"
-		value = [1 1 1]
-	}
-	emissive_intensity = {
-		type = "scalar"
-		value = 1
-	}
-	metallic = {
-		type = "scalar"
-		value = 0
-	}
-	roughness = {
-		type = "scalar"
-		value = 0.33
-	}
-	use_ao_map = {
-		type = "scalar"
-		value = 0
-	}
-	use_color_map = {
-		type = "scalar"
-		value = 0
-	}
-	use_emissive_map = {
-		type = "scalar"
-		value = 0
-	}
-	use_metallic_map = {
-		type = "scalar"
-		value = 0
-	}
-	use_normal_map = {
-		type = "scalar"
-		value = 0
-	}
-	use_roughness_map = {
-		type = "scalar"
-		value = 0
-	}
-	uv_offset = {
-		type = "vector2"
-		value = [0 0]
-	}
-	uv_scale = {
-		type = "vector2"
-		value = [1 1]
-	}
 }
