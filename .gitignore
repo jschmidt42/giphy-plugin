@@ -18,6 +18,8 @@ node_modules/
 
 plugin/*.js
 plugin/*.map
+plugin/sample_project/gifs/*.gif
+plugin/sample_project/frames/*.png
 
 # File patterns
 

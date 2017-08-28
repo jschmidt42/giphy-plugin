@@ -33,7 +33,7 @@ extensions = {
 
     // Add an asset type to see GIF assets in the asset browser.
     asset_types = [
-       // { type = "gif" category = "Images" icon = "sample_project/thumbnail.png" }
+        { type = "gif" category = "Images" icon = "sample_project/thumbnail.png" }
     ]
 
     // Define a project template extension that will show up in the project manager.
@@ -46,7 +46,7 @@ extensions = {
 
     // Add an GIF importer.
     imports = [
-        //{ types = ["gif"] label = "Giphy" do = [ { type = "js" module = "giphy-importer" function_name = "importGiphy" } ] }
+        { types = ["gif"] label = "Giphy" do = [ { type = "js" module = "giphy-importer" function_name = "importGiphy" } ] }
     ]
 
     // Load the engine extension in the editor engine instance.
