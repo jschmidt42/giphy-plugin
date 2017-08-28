@@ -1,0 +1,81 @@
+// Use IntelliSense to learn about possible Stingray debug attributes.
+// Hover to view descriptions of existing attributes.
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Stingray Editor",
+            "url": "file:///${workspaceRoot}/editor/core/boot.html?partial=*&winId=main",
+            "pathMapping": {
+                "${workspaceRoot}": "file:///${workspaceRoot}/"
+            },
+            "port": 9088
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Stingray Panel",
+            "url": "file:///${workspaceRoot}/editor/core/boot.html?*&window=yes&*",
+            "pathMapping": {
+                "${workspaceRoot}": "file:///${workspaceRoot}/"
+            },
+            "port": 9088
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Boot Script",
+            "url": "file:///${workspaceRoot}/editor/core/boot.html?partial=*&mode=core/program",
+            "pathMapping": {
+                "${workspaceRoot}": "file:///${workspaceRoot}/"
+            },
+            "port": 9088
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Test Spec",
+            "url": "file:///${workspaceRoot}/editor/core/boot.html?*test-runner.js*",
+            //"url": "file:///${workspaceRoot}/editor/core/boot.html?*single-test-spec.js*",
+            "pathMapping": {
+                "${workspaceRoot}": "file:///${workspaceRoot}/"
+            },
+            "port": 9088
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Test Spec",
+            "runtimeExecutable": "${workspaceRoot}/build/binaries/editor/stingray_editor.exe",
+            "runtimeArgs": [
+                "--test",
+                "${file}"
+            ],
+            "timeout": 10000,
+            "url": "file:///${workspaceRoot}/editor/core/boot.html?*single-test-spec.js*",
+            "pathMapping": {
+                "${workspaceRoot}": "file:///${workspaceRoot}/"
+            },
+            "port": 9088
+        },
+        {
+            "type": "stingray",
+            "request": "attach",
+            "name": "Editor Engine",
+            "ip": "127.0.0.1",
+            "port": 14030
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Stingray Editor (all)",
+            "configurations": [
+                "Stingray Editor",
+                "Editor Engine"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 200,
+    "editor.wrappingIndent": "indent",
+    "editor.minimap.enabled": false,
+
+    "files.exclude": {
+        "tests.log": true,
+        "*.log": true,
+        "*.min.js": true,
+        "*.orig": true,
+        "*.bsi": true,
+        "*.font": true,
+        "*.svg": true,
+        "sqlite3.c": true,
+        "disclaimer*.html": true,
+        "*.diff": true,
+        "*.user": true,
+        "AssemblyInfo.cs": true,
+        "*.fbx": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/build": true,
+        "**/output": true,
+        "**/packages": true,
+        "**/.DS_Store": true,
+        "**/.nuget": true,
+        "**/obj": true,
+        "**/bin": true,
+        "**/Debug": true,
+        "**/Release": true,
+        "**/VSCode-win32-*": true,
+        "**/*.js.map": true,
+        "**/*.js": { "when": "$(basename).ts" }
+    },
+
+    "search.exclude": {
+        "**/*.bsi": true,
+        "**/disclaimer*.html": true,
+        "**/dist": true,
+        "**/out": true,
+        "**/*.svg": true,
+        "**/node_modules": true,
+        "**/3rdparty": true,
+        "**/bower_components": true,
+        ".vscode": true,
+        "plugin/**/*.js": true
+    },
+
+    "files.associations": {
+        "qdesktopservices": "cpp",
+        "qdir": "cpp",
+        "qlocalserver": "cpp",
+        "regex": "cpp",
+        "xiosbase": "cpp",
+        "array": "cpp",
+        "xutility": "cpp"
+    }
+}

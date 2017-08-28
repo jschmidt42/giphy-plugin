@@ -1,0 +1,58 @@
+/*
+${workspaceRoot} the path of the folder opened in VS Code
+${workspaceRootFolderName} the name of the folder opened in VS Code without any slashes (/)
+${file} the current opened file
+${relativeFile} the current opened file relative to workspaceRoot
+${fileBasename} the current opened file's basename
+${fileBasenameNoExtension} the current opened file's basename without the extension
+${fileDirname} the current opened file's dirname
+${fileExtname} the current opened file's extension
+${cwd} the task runner's current working directory on startup
+*/
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "tslint (fix)",
+            "command": "tslint",
+            "args": [
+                "--fix", "-c", "editor/tslint.json", "${file}"
+            ],
+            "isShellCommand": true,
+            "problemMatcher":"$tslint5"
+        },
+        {
+            "taskName": "build ts",
+            "command": "node",
+            "args": [
+                "./node_modules/typescript/bin/tsc",
+                "-p", "./"
+            ],
+            "isShellCommand": true,
+            "options": {
+                "cwd": "${workspaceRoot}/editor/typescript"
+            },
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "build all",
+            "command": "ruby",
+            "args": ["make.rb"],
+            "isBuildCommand": true
+        },
+        {
+            "taskName": "code stats",
+            "command": "D:/Tools/cloc-1.72.exe",
+            "args": [
+                //"./core/", "./editor/", "./runtime/", "./cmake/",
+                "--exclude-dir", "3rdparty,node_modules,external,directed_learning,mojoshader,typings,packages,bin,zlib,docs,headers,tools",
+                "--exclude-lang", "F#,XAML,Windows Module Definition,Qt,INI,Visualforce Component",
+                "--vcs=git"
+                //, "--by-file"
+            ],
+            "showOutput": "always"
+        }
+    ]
+}
