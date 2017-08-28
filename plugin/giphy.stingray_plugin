@@ -23,12 +23,12 @@ extensions = {
 
     // Define the Giphy viewer view.
     views = [
-        //{ type = "panel" name = "giphy-viewer" path = "giphy-viewer" title = "Giphy Viewer" width = 725 height = 800 }
+        { type = "panel" name = "giphy-viewer" path = "giphy-viewer" title = "Giphy Viewer" width = 725 height = 800 }
     ]
 
     // Define a menu item that will open the Giphy viewer.
     menus = [
-       // { path = "Window/Giphy" view = "giphy-viewer" order = 359 }
+        { path = "Window/Giphy" view = "giphy-viewer" order = 359 }
     ]
 
     // Add an asset type to see GIF assets in the asset browser.
