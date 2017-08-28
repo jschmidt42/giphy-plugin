@@ -1,16 +1,14 @@
 
 data_directory = "../../build/sample_project_data"
 default_startup_level = "sample"
-description = "Create a sample project that demonstrates the usages of the Stingray Example Plugin."
+description = "Create a sample project that demonstrates the usages of the Stingray Giphy plugin."
 libraries = {
 }
 migrations = {
 	"asset-browser" = {
-		patches = {
-			"replace-fbxasc" = [
-				"successfully applied"
-			]
-		}
+		patches = [
+			"replace-fbxasc"
+		]
 		version = "1.8.0"
 	}
 	"level-flow-editor" = {
@@ -34,8 +32,8 @@ migrations = {
 		version = "1.8.0"
 	}
 }
-name = "Project Sample"
+name = "Giphy"
 reverse_forward_axis = true
 source_directory = "./"
-thumbnail = "sample.svg"
+thumbnail = "thumbnail.png"
 version = "1.9.0.0"

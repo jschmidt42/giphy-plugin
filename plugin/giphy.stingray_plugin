@@ -15,7 +15,7 @@ author = {
 keywords = ["autodesk", "stingray", "plugin", "example"]
 
 // Define plugin thumbnail
-//thumbnail = "sample_project/thumbnail.png"
+thumbnail = "sample_project/thumbnail.png"
 
 // Extensions
 //
